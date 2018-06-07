@@ -29,11 +29,11 @@ html {
 }
 
 .weather_group i.iconfont {
-    font-size: 40px;
+    font-size: 58px;
 }
 
 .workshopList {
-    width: 85%;
+    width: 95%;
     height: 560px;
     margin: 0 auto;
 }
@@ -73,12 +73,13 @@ h3 img {
 }
 
 ul.title li span {
-    width: 11%;
+    width: 9%;
     height: 100%;
     float: left;
     margin-left: 0.8%;
     text-align: center;
-    font-size: 19px;
+    font-size: 22px;
+    font-weight: bold;
     box-sizing: border-box;
     /*字体垂直居中*/
     display: flex;
@@ -87,11 +88,13 @@ ul.title li span {
 }
 
 #scrollDiv li span {
-    width: 11%;
+    width: 9%;
     float: left;
     margin-left: 0.8%;
     color: #0000ff;
-    font-size: 16px;
+    /*font-size: 20px;*/
+    font-size: 2rem;
+    font-weight: bolder;
     text-align: center;
     box-sizing: border-box;
     /*字体垂直居中*/
@@ -120,9 +123,44 @@ ul.title li span {
     text-align: center;
 }
 
+#scrollbg {
+    position: relative;
+}
+
+#scrollbgul {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+#scrollbgul li {
+    width: 100%;
+    min-height: 46px;
+    list-style: none;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    /*border: 1px solid red;*/
+    background: #ebf5fe;
+}
+
+#scrollbgul li:nth-child(odd) {
+    background: lightyellow;
+}
+
+#scrollDiv {
+    z-index: 10;
+    width: 100%;
+    height: 506px;
+    min-height: 41px;
+    line-height: 41px;
+    position: absolute;
+    overflow: hidden;
+}
+
 #scrollDiv li span:last-child,
 ul.title li span:last-child {
     float: right;
+    margin-right: 6px;
     border: none;
 }
 
@@ -130,27 +168,19 @@ ul.title li span.list3,
 #scrollDiv li span.list3,
 ul.title li span.list4,
 #scrollDiv li span.list4 {
-    width: 19%;
+    width: 18%;
     box-sizing: border-box;
-}
-
-#scrollDiv {
-    width: 100%;
-    height: 506px;
-    min-height: 41px;
-    line-height: 41px;
-    overflow: hidden;
-    /*border: 1px solid red;*/
 }
 
 #scrollDiv li {
     width: 100%;
-    height: 42px;
+    height: 46px;
     list-style: none;
-    background: #ebf5fe;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    background: transparent;
+    /*border: 1px solid green;*/
 }
+
+#scrollDiv li:nth-child(odd) {}
 
 ul.title li span:first-child,
 #scrollDiv li span:first-child {
@@ -185,7 +215,7 @@ ul.title li span:first-child,
 
 .shopfooter .data_group {
     margin-top: 37px;
-    min-width: 222px;
+    min-width: 231px;
 }
 
 i.iconfont.icon-yu {
@@ -198,6 +228,7 @@ i.iconfont.icon-yu {
 
 .data {
     margin-right: 21px;
+    margin-left: 20px;
 }
 
 .rightBox {

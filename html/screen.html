@@ -44,6 +44,7 @@
         <div class="workshopList">
             <ul class="title">
                 <li>
+                    <span class="list0">序号</span>
                     <span class="list1">车辆编号</span>
                     <span class="list2">申请人</span>
                     <span class="list3">维修项目</span>
@@ -53,12 +54,27 @@
                     <span class="list7">停放地点</span>
                 </li>
             </ul>
-            <div id="scrollDiv">
-                <!--<ul class="line"></ul>-->
-                <ul>
-                    <!--<li>这是公告标题的第一行</li>
-                    <li>这是公告标题的第二行</li>-->
-                </ul>
+            <div id="scrollbg">
+                <div id="scrollbgul">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="scrollDiv">
+                    <!--<ul class="line"></ul>-->
+                    <ul>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="shopfooter">
@@ -230,7 +246,10 @@
                     } else {
                         activename = "";
                     }
-                    screenHtml += '<li style="margin-top:0px;"><span class="list1">' + obj[i].vSn +
+                    var index = i + 1;
+                    screenHtml +=
+                        '<li style="margin-top:0px;"><span class="list0">' + index +
+                        '</span><span class="list1">' + obj[i].vSn +
                         '</span><span class="list2 ' + classname + '">' + obj[i].operator + '</span>' +
                         '<span class="list3">' + obj[i].operator +
                         '</span><span class="list4">' + obj[i].data +
@@ -240,9 +259,9 @@
                 }
                 $("#scrollDiv ul").html(screenHtml);
                 $("#scrollDiv").Scroll({
-                    line: 12,
-                    speed: 1000,
-                    timer: 8000
+                    line: 10,
+                    speed: 500,
+                    timer: 6000
                 });
             },
             "error": function(res) {
@@ -250,9 +269,9 @@
             }
         })
     }
-
-    // $(document).ready(function() {
     getList();
+    // $(document).ready(function() {
+    //     getList();
     //     $("#scrollDiv").Scroll({
     //         line: 5,
     //         speed: 1000,
@@ -309,11 +328,6 @@
             return "星期六";
         }
     }
-
-
-    // console.log(myday);
-    // console.log(formatterDate());
-    // console.log(formatterDateTime());
     setInterval(function() {
         $(".data").html(formatterDate());
         $(".datatime").html(formatterDateTime());
@@ -321,7 +335,7 @@
     }, 1000);
     setInterval(function() {
         // getList();
-    }, 3000); //1小时刷新一次 维修大屏列表和 百分比
+    }, 3000); //1小时刷新一次 维修大屏列表和百分比
     // 早上刷新一次，下午刷新一次？
     // 字体大小变化
     if ($(document.body).width() >= 3800) {
@@ -337,6 +351,7 @@
     var viewFullScreen = document.getElementById("btn");
     if (viewFullScreen) {
         viewFullScreen.addEventListener("click", function() {
+            $("#btn").hide();
             var docElm = document.documentElement;
             if (docElm.requestFullscreen) {
                 docElm.requestFullscreen();
@@ -347,16 +362,20 @@
                 docElm.mozRequestFullScreen();
             } else if (docElm.webkitRequestFullScreen) {
                 docElm.webkitRequestFullScreen();
-            }
+            } else {}
         }, false);
     }
-    var myheight = $("ul.line li").height();
-    // $(".line").slideUp("", myheight);
-
+    (function($) {
+        $(document).ready(function() {}).keydown(function(e) {
+            if (e.which === 27) {
+                $("#btn").show();
+                /** 这里编写当ESC按下时的处理逻辑！ */
+            }
+        });
+    })(jQuery);
     $("#btn").click(function() {
         // clearInterval(anifun); //清除自动滑动动画
         // anifun = setInterval('autoScroll()', 2000);
-
     });
     $.ajax({
         url: 'https://restapi.amap.com/v3/weather/weatherInfo',
