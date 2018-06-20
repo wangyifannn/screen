@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /*border: 1px solid red;*/
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 
 .shopbody {
     width: 100%;
-    min-width: 1000px;
+    min-width: 1800px;
     min-height: 820px;
     height: 100%;
     padding-top: 20px;
@@ -24,6 +25,7 @@ html {
 
 .shopwhole {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -34,7 +36,7 @@ html {
 
 .workshopList {
     width: 95%;
-    height: 560px;
+    height: 605px;
     margin: 0 auto;
 }
 
@@ -48,15 +50,15 @@ html {
     margin-bottom: 10px;
     outline: none;
     position: absolute;
-    right: 126px;
-    top: 33px;
+    right: 168px;
+    top: 5px;
     cursor: pointer;
 }
 
 ul.title {
     width: 100%;
-    height: 50px;
-    line-height: 50px;
+    height: 56px;
+    line-height: 56px;
     text-align: center;
 }
 
@@ -76,7 +78,7 @@ ul.title li span {
     width: 9%;
     height: 100%;
     float: left;
-    margin-left: 0.8%;
+    /*margin-left: 0.1%;*/
     text-align: center;
     font-size: 22px;
     font-weight: bold;
@@ -90,12 +92,12 @@ ul.title li span {
 #scrollDiv li span {
     width: 9%;
     float: left;
-    margin-left: 0.8%;
-    color: #0000ff;
-    /*font-size: 20px;*/
-    font-size: 2rem;
+    /*color: #0000ff;*/
+    color: #000;
+    font-size: 2.7rem;
     font-weight: bolder;
     text-align: center;
+    line-height: 50px;
     box-sizing: border-box;
     /*字体垂直居中*/
     display: flex;
@@ -109,15 +111,16 @@ ul.title li span {
 
 .shopwhole .logo {
     position: absolute;
-    width: 200px;
+    width: 240px;
     height: auto;
     left: 7%;
-    top: 0px;
+    top: -30px;
 }
 
 .shopwhole h3 {
-    font-size: 38px;
-    padding: 15px 0px;
+    font-size: 57px;
+    font-weight: bold;
+    padding: 0px 0px;
     letter-spacing: 2px;
     color: #0000ff;
     text-align: center;
@@ -135,56 +138,63 @@ ul.title li span {
 
 #scrollbgul li {
     width: 100%;
-    min-height: 46px;
+    min-height: 56px;
     list-style: none;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    /*border: 1px solid red;*/
-    background: #ebf5fe;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    /*background: #ebf5fe;*/
+    background: #6D8CF5;
 }
 
 #scrollbgul li:nth-child(odd) {
-    background: lightyellow;
+    min-height: 56px;
+    /*background: #FF8040;*/
+    /*background: #EACC53;*/
+    /*background: #E3BB1C;*/
+    background: #FFFF6C;
+    /*background: lightyellow;*/
+    /*background: #fefdb2;*/
 }
 
 #scrollDiv {
     z-index: 10;
     width: 100%;
-    height: 506px;
-    min-height: 41px;
-    line-height: 41px;
+    height: 552px;
+    /*height: 506px;*/
     position: absolute;
     overflow: hidden;
 }
 
+#scrollDiv li span:first-child,
+ul.title li span:first-child {
+    width: 5%;
+}
+
 #scrollDiv li span:last-child,
 ul.title li span:last-child {
-    float: right;
-    margin-right: 6px;
-    border: none;
+    width: 10%;
+    box-sizing: border-box;
 }
 
 ul.title li span.list3,
 #scrollDiv li span.list3,
 ul.title li span.list4,
 #scrollDiv li span.list4 {
-    width: 18%;
+    width: 22%;
+    box-sizing: border-box;
+}
+
+ul.title li span.list1,
+#scrollDiv li span.list1 {
+    width: 13%;
     box-sizing: border-box;
 }
 
 #scrollDiv li {
     width: 100%;
-    height: 46px;
+    height: 56px;
     list-style: none;
     background: transparent;
-    /*border: 1px solid green;*/
-}
-
-#scrollDiv li:nth-child(odd) {}
-
-ul.title li span:first-child,
-#scrollDiv li span:first-child {
-    margin-left: 4px;
 }
 
 .list6 span,
@@ -215,20 +225,25 @@ ul.title li span:first-child,
 
 .shopfooter .data_group {
     margin-top: 37px;
-    min-width: 231px;
-}
-
-i.iconfont.icon-yu {
-    font-size: 50px;
-}
-
-.shopfooter p {
-    font-size: 16px;
 }
 
 .data {
     margin-right: 21px;
     margin-left: 20px;
+}
+
+.datatime {
+    /*border: 1px solid red;*/
+    min-width: 310px;
+    text-align: center;
+}
+
+i.iconfont.icon-yu {
+    font-size: 56px;
+}
+
+.shopfooter p {
+    font-size: 16px;
 }
 
 .rightBox {
@@ -237,7 +252,7 @@ i.iconfont.icon-yu {
 
 p.font-big,
 .maintain_countCar {
-    font-size: 40px;
+    font-size: 55px;
 }
 
 .maintain_countCar {
@@ -245,7 +260,7 @@ p.font-big,
 }
 
 .font_smalll span {
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .dayweather {
@@ -259,5 +274,6 @@ p.font-big,
 
 .circleChart_text {
     /*百分比园内的字体大小*/
-    font-size: 14px !important;
+    font-size: 17px !important;
+    font-weight: bold;
 }
