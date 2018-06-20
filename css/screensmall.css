@@ -156,8 +156,9 @@ ul.title li span {
 #scrollbgul li:nth-child(odd) {
     min-height: 65px;
     /*background: #fefdb2;*/
-    background: #FEFEB8;
+    /*background: #FEFEB8;*/
     /*background: #D4D4D4;*/
+    background: #E1E1E1;
     /*background: #FEFECB;*/
 }
 
@@ -214,7 +215,7 @@ ul.title li span.list1,
 .shopfooter {
     width: 80%;
     margin: 0 auto;
-    font-family: 'langqingti';
+    /*font-family: 'langqingti';*/
     min-width: 1005px;
 }
 
@@ -242,7 +243,7 @@ ul.title li span.list1,
 
 .datatime {
     /*border: 1px solid red;*/
-    min-width: 310px;
+    min-width: 262px;
     text-align: center;
 }
 
