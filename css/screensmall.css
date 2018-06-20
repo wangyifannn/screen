@@ -230,7 +230,7 @@ ul.title li span.list1,
 }
 
 .shopfooter .data_group {
-    margin-top: 37px;
+    margin-top: 15px;
 }
 
 .data {
@@ -243,12 +243,16 @@ ul.title li span.list1,
     text-align: center;
 }
 
+.shopfooter span {
+    font-size: 19px;
+}
+
 i.iconfont.icon-yu {
     font-size: 56px;
 }
 
 .shopfooter p {
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .rightBox {

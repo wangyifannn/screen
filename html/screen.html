@@ -208,7 +208,6 @@
                     if (obj[i].park == null) {
                         obj[i].park = "--";
                     }
-
                     if (i == 0) {
                         activename = "active";
                     } else {
@@ -234,8 +233,6 @@
 
                 var list3 = $("#scrollDiv ul li .list3");
                 console.log(list3);
-                // isEllipsis(list3);
-                // console.log(isEllipsis(list3));
                 for (var i = 0; i < list3.length; i++) {
                     if (isEllipsis(list3[i])) {
                         console.log(i + "溢出");
@@ -244,9 +241,6 @@
                         console.log(i + "zhenchang");
                     }
                 }
-                // var firstKey = name.substring(0, 1);
-                // var lastAllKey = name.substring(1);
-
             },
             "error": function(res) {
                 console.log(res);
