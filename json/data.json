@@ -14,7 +14,7 @@
             "forecastTime": "01-10 00:00:00",
             "status": "维修中",
             "islegal": "合法",
-            "workContent": "雨刮器不动作，检修。",
+            "workContent": "雨刮器不动作，检修",
             "applyPeople": "别和克",
             "fin_park": "维修间",
             "carvSn": "2015-809"
@@ -42,7 +42,7 @@
             "carvSn": "陕A870gg"
         },
         {
-            "vSn": 3,
+            "vSn": "2018ICECTC008",
             "operator": "车辆 3",
             "status": "维修中",
             "forecastTime": "01-10 00:00:00",
@@ -64,29 +64,29 @@
             "carvSn": "陕A170UX"
         },
         {
-            "vSn": 5,
+            "vSn": "2018ICECTC031",
             "operator": "车辆 5",
             "forecastTime": "01-10 00:00:00",
             "status": "排队中",
             "islegal": "不合法",
-            "workContent": "雨刮器不动作，检修",
+            "workContent": "雨刮器不动作，换灯,检修",
             "applyPeople": "别克",
             "fin_park": "维修间",
             "carvSn": "陕A470UX"
         },
         {
-            "vSn": 6,
+            "vSn": "2018ICECTC011",
             "operator": "车辆 6",
             "forecastTime": "01-10 00:00:00",
             "status": "已完成",
             "islegal": "合法",
-            "workContent": "雨刮器不动作，检修",
+            "workContent": "雨刮器不动作，换灯,检修，换灯,检修，换灯,检修",
             "applyPeople": "别克",
             "fin_park": "维修间",
             "carvSn": "2015-819"
         },
         {
-            "vSn": 7,
+            "vSn": "2019SJSNS002",
             "operator": "车辆 7",
             "forecastTime": "01-10 00:00:00",
             "status": "已完成",
