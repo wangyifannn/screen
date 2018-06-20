@@ -68,7 +68,7 @@
                         <li></li>
                         <li></li>
                         <li></li>
-                        <li></li>
+                        <!--<li></li>-->
                     </ul>
                 </div>
                 <div id="scrollDiv">
@@ -139,7 +139,7 @@
                     $("head").append("<script type='text/javascript' src='../assets/js/circleChart.js'>" + '<' + "/script>");
                     console.log($(document.body).width());
                     $(".circleChart#0").circleChart({
-                        size: 80,
+                        size: 70,
                         color: "#61397F",
                         backgroundColor: "#8D8D8D",
                         value: res.queuepercentage,
@@ -149,7 +149,7 @@
                         }
                     });
                     $(".circleChart#1").circleChart({
-                        size: 80,
+                        size: 70,
                         color: "#D84E6F",
                         backgroundColor: "#8D8D8D",
                         value: res.currentpercentage,
@@ -160,7 +160,7 @@
                         }
                     });
                     $(".circleChart#2").circleChart({
-                        size: 80,
+                        size: 70,
                         color: "#1FAC41",
                         backgroundColor: "#8D8D8D",
                         value: res.completepercentage,
